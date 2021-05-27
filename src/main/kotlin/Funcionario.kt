@@ -1,11 +1,10 @@
-class Funcionario(
+open class Funcionario(
     var nome: String,
     var salario: Double,
     var cpf: String
 ) {
-    fun bonificacao(): Double {
-        return salario * 0.10
-    }
+    open val bonificacao: Double get() =  salario * 0.10
+
 
 
 }
