@@ -10,6 +10,6 @@ class Analista(
 
     override val bonificacao: Double
         get() {
-            return super.bonificacao + salario *0.1
+            return  salario * 0.2
         }
 }

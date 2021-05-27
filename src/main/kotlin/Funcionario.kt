@@ -1,9 +1,9 @@
-open class Funcionario(
+abstract class Funcionario(
     var nome: String,
     var salario: Double,
     var cpf: String
 ) {
-    open val bonificacao: Double get() =  salario * 0.10
+    abstract val bonificacao: Double
 
 
 

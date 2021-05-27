@@ -1,6 +1,6 @@
-open class Conta(var titular: String, var numero: Int){
+abstract class Conta(var titular: String, var numero: Int){
      var saldo = 0.0
-         private set
+         protected set
 
 
 
@@ -10,13 +10,7 @@ open class Conta(var titular: String, var numero: Int){
         }
     }
 
-    open fun saca(valor: Double){
-        if(this.saldo >= valor){
-            this.saldo -= valor
-        }else{
-            println("Saldo insuficiente!")
-        }
-    }
+    abstract fun saca(valor: Double)
 
     fun transfere(valor: Double, destino: Conta) : Boolean{
         if(this.saldo >= valor){

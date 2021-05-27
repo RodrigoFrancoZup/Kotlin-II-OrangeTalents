@@ -16,7 +16,7 @@ class Diretor(
 
     override val bonificacao: Double
         get() {
-            return super.bonificacao + salario + prl
+            return  salario * 0.4 + prl
         }
 
 

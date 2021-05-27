@@ -2,10 +2,10 @@ fun entendendoDiferencaEntreCopiaEReferencia(){
     //É igual no java
     //contaRodrigo é uma referencia para o objeto do tipo Conta
 
-    val contaRodrigo = Conta("Rodrigo", 1000)
+    val contaRodrigo = ContaCorrente("Rodrigo", 1000)
     // Nao funciona mais, pois o set de saldo agora é private contaRodrigo.saldo = 200.0
 
-    val contaFran = Conta("Fran", 1001)
+    val contaFran = ContaCorrente("Fran", 1001)
     // Nao funciona mais, pois o set de saldo agora é private contaFran.saldo = 300.0
 
     println(contaRodrigo.titular)
@@ -31,7 +31,7 @@ fun entendendoDiferencaEntreCopiaEReferencia(){
 
     // --Variaveis que são referencia de um objeto
 
-    val contaJoao = Conta("Joao", 2000)
+    val contaJoao = ContaCorrente("Joao", 2000)
 
 
     val contaMaria = contaJoao;

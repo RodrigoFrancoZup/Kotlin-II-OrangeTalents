@@ -1,10 +1,10 @@
 fun testaComportamentoConta() {
     //Usando Label no patâmetos do construtor!
-    val contaRodrigo = Conta(numero = 1000, titular = "Rodrigo")
+    val contaRodrigo = ContaCorrente(numero = 1000, titular = "Rodrigo")
 
     contaRodrigo.deposita(2000.0)
 
-    val contaFran = Conta("Franco", 1001)
+    val contaFran = ContaCorrente("Franco", 1001)
 
     contaFran.deposita(300.0)
 

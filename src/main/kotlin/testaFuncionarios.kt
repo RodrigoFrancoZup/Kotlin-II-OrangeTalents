@@ -1,8 +1,10 @@
 fun testaFuncionarios() {
-    val rodrigo = Funcionario(
+    val rodrigo = Diretor(
         nome = "Rodrigo",
         salario = 2500.00,
-        cpf = "111.111.111-11"
+        cpf = "111.111.111-11",
+        senha = 159159,
+        prl = 5000.00
     )
 
     val fran = Gerente(
