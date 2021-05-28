@@ -9,8 +9,11 @@ class Diretor(
     cpf = cpf,
     salario = salario,
     senha = senha
-) {
+), Autenticavel {
     override val bonificacao: Double get() =  this.salario * 0.3
 
+    override fun autentica(senha: Int): Boolean {
+        return super<FuncionarioAdministrador>.autentica(senha)
+    }
 
 }

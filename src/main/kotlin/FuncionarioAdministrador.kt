@@ -9,8 +9,8 @@ abstract class FuncionarioAdministrador(
     cpf = cpf
 ){
 
-
-    fun autentica(senha: Int):Boolean{
+    //Colocamos open para poder indicar se vamos usar esse metodo ou da inteface
+    open fun autentica(senha: Int):Boolean{
         if(this.senha == senha){
             return true
         }
